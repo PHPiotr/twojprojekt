@@ -1,8 +1,4 @@
 <?php
-
-//error_reporting(E_ALL);
-//ini_set('display_errors', 1);
-
 require_once 'configs/configuration.php';
 
 function __autoload($class) {
@@ -10,6 +6,5 @@ function __autoload($class) {
 }
 
 $app = new Bootstrap();
-//$app->httpAuth();
 $app->run();
 
