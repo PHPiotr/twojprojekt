@@ -30,14 +30,14 @@
         </script>
 <? endif; ?>
 <div style="font-size:0.8em;color:silver">
-        &copy; <a href="http://piotrkowalski.eu" style="color:silver" target="_blank">Profi</a>
+        &copy; <a href="https://stackoverflow.com/users/1979240/piotr-kowalski" style="color:silver" target="_blank">Profi</a>
 </div>
 </div>
 
 <a href="#" class="scrollup-fixed-btn btn btn-danger scrollup right-btn" style="display:none;position:fixed;bottom:20px;right:0">Do góry</a>
-<script src="http://twojprojekt.com.pl/media/js/jquery.js"></script>
+<script src="/media/js/jquery.js"></script>
 <? if ($page === 'ustawienia'): ?>
-        <script src="http://twojprojekt.com.pl/media/js/tiny_mce/tiny_mce.js"></script>
+        <script src="/media/js/tiny_mce/tiny_mce.js"></script>
         <script type="text/javascript">
                 tinyMCE.init({
                         mode : "textareas",
@@ -104,10 +104,10 @@
                 });
         </script>
 <? endif; ?>
-<script src="http://twojprojekt.com.pl/media/js/shadowbox/shadowbox.js"></script>
-<script src="http://twojprojekt.com.pl/media/js/bootstrap.min.js"></script>
+<script src="/media/js/shadowbox/shadowbox.js"></script>
+<script src="/media/js/bootstrap.min.js"></script>
 
-<script src="http://twojprojekt.com.pl/media/js/script.js"></script>
+<script src="/media/js/script.js"></script>
 <? if (is_file("templates/{$page_dir}/{$page_dir}.js")): ?>
         <script src="/templates/<?= $page_dir ?>/<?= $page_dir ?>.js"></script>
 <? endif; ?>
