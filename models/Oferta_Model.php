@@ -42,7 +42,7 @@ class Oferta_Model extends Model {
      * Get all records from kategorie table as an array - where url_kategorii equals...
      * @return array Array of recoords from table 'kategorie'.
      */
-    public function category() {
+    public function category($url) {
         if ($this->categoryUrl !== 'ustawienia') {
             $sth = $this->db->prepare("SELECT * FROM kategorie WHERE url_kategorii = :url_kategorii");
             $sth->bindParam(':url_kategorii', $this->categoryUrl, PDO::PARAM_STR);
@@ -317,7 +317,7 @@ class Oferta_Model extends Model {
     }
 
     public function pomieszczenia() {
-        $category = $this->category();
+        $category = $this->category(null);
         $categoryId = $category['id'];
         $sth = $this->db->query("SELECT id, nazwa_pomieszczenia FROM pomieszczenia WHERE id_kategorii = {$categoryId} ORDER BY nazwa_pomieszczenia ASC");
         $sth->execute();

@@ -12,7 +12,7 @@ class Oferta extends Controller {
         
         $this->model->prepareUrl($args);
 
-        $this->view->category = $this->model->category();
+        $this->view->category = $this->model->category(null);
 
         $this->view->projectUrl = $this->model->projectUrl;
         $this->view->projectId = $this->model->projectId();
