@@ -51,7 +51,7 @@
                                                         </div>
                                                 <? endif; ?>
                                         </div>
-                                        <?php $kontakt = "<address><div>{$this->opis['miasto']}<br>{$this->opis['ulica']}</div><br/><div>{$this->opis['telefon']}<br /><a href='mailto:{$this->opis['email']}'>{$this->opis['email']}</a></div></address>"; ?>
+                                        <?php $kontakt = "<address><div>{$this->opis['osoba']}<br>{$this->opis['miasto']}<br>{$this->opis['ulica']}</div><br/><div>{$this->opis['telefon']}<br /><a href='mailto:{$this->opis['email']}'>{$this->opis['email']}</a></div></address>"; ?>
                                         <div class="span7 navbar">
                                                 <div class="span12">
                                                         <div class="navbar-inner">
